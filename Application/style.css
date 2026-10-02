@@ -1,0 +1,169 @@
+/* ---------- Colors and basic settings ---------- */
+:root {
+  --bg: #f6f8fb;
+  --surface: #ffffff;
+  --ink: #14213d;
+  --muted: #55627a;
+  --accent: #0b7285;
+  --accent-dark: #095c6b;
+  --border: #dce3ed;
+  --hero-bg: #14213d;
+  --hero-text: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+.container {
+  width: min(100% - 2rem, 960px);
+  margin-inline: auto;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background: var(--hero-bg);
+  color: var(--hero-text);
+  padding: 4rem 0 3.5rem;
+}
+
+.hero h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.9rem, 5vw, 3rem);
+  line-height: 1.15;
+  max-width: 20ch;
+}
+
+.lead {
+  margin: 0 0 1.5rem;
+  max-width: 60ch;
+  font-size: 1.1rem;
+  color: #c9d3e6;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.9rem;
+  border: 1px solid #3b4a6b;
+  border-radius: 999px;
+}
+
+.dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: #3ddc97;
+}
+
+/* ---------- Sections ---------- */
+main section {
+  padding: 2.5rem 0 0;
+}
+
+h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+}
+
+p {
+  max-width: 70ch;
+  color: var(--muted);
+}
+
+/* ---------- Technology list ---------- */
+.tech-grid {
+  list-style: none;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.tech-grid li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem 1.1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+}
+
+.tech-grid strong {
+  font-size: 1.05rem;
+}
+
+.tech-grid span {
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+/* ---------- Button and tip ---------- */
+button {
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 1.4rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+button:hover {
+  background: var(--accent-dark);
+}
+
+button:focus-visible {
+  outline: 3px solid #74c0d0;
+  outline-offset: 2px;
+}
+
+.tip {
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--ink);
+}
+
+/* ---------- Footer ---------- */
+footer {
+  margin-top: 3.5rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+footer p {
+  max-width: none;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 480px) {
+  .hero {
+    padding: 2.5rem 0 2rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}

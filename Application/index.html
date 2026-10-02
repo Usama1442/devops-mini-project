@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beginner DevOps mini project by Usama.">
+  <title>Usama DevOps Mini Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Welcome to Usama's DevOps Mini Project</h1>
+      <p class="lead">
+        This small web app is the starting point of my DevOps learning journey.
+        I will build, containerize, deploy, and automate it step by step.
+      </p>
+      <p class="status"><span class="dot"></span> Status: App ready, pipeline coming next</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section>
+      <h2>About the project</h2>
+      <p>
+        The goal is to take a simple HTML, CSS, and JavaScript app and practise the full
+        DevOps workflow: version it with Git, host the code on GitHub, package it with Docker,
+        run it on Kubernetes, deploy it to AWS, and automate everything with CI/CD and Ansible.
+      </p>
+    </section>
+
+    <section>
+      <h2>Technologies</h2>
+      <ul class="tech-grid">
+        <li><strong>Linux</strong><span>The operating system most servers run on.</span></li>
+        <li><strong>Git</strong><span>Tracks every change made to the code.</span></li>
+        <li><strong>GitHub</strong><span>Stores the code online and enables teamwork.</span></li>
+        <li><strong>Docker</strong><span>Packages the app so it runs the same everywhere.</span></li>
+        <li><strong>Kubernetes</strong><span>Runs and manages containers at scale.</span></li>
+        <li><strong>AWS</strong><span>Cloud platform where the app will be hosted.</span></li>
+        <li><strong>CI/CD</strong><span>Automatically tests and deploys each change.</span></li>
+        <li><strong>Ansible</strong><span>Automates server setup and configuration.</span></li>
+      </ul>
+    </section>
+
+    <section class="tip-section">
+      <h2>Try it out</h2>
+      <p>Click the button to see a DevOps tip.</p>
+      <button id="tip-button" type="button">Show a DevOps tip</button>
+      <p id="tip-text" class="tip" aria-live="polite">Your tip will appear here.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Usama DevOps Mini Project</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
