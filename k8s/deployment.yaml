@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: usama-devops-app
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: usama-devops-app
+
+  template:
+    metadata:
+      labels:
+        app: usama-devops-app
+
+    spec:
+      containers:
+        - name: web
+          image: usama-devops-app:1.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80

@@ -1,0 +1,17 @@
+---
+  - name: Configure DevOps application server
+    hosts: local
+    become: true
+  
+    tasks:
+      - name: Install Git
+        apt:
+          name: git
+          state: present
+          update_cache: true
+  
+      - name: Create application deployment user
+        user:
+          name: deploy
+          state: present
+          shell: /bin/bash
