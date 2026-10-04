@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: devops-mini-app:latest
+          image: ghcr.io/usama1442/devops-mini-app:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
