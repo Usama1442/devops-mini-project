@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: usama-devops-app:1.0
+          image: devops-mini-app:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
