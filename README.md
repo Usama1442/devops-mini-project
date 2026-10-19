@@ -38,6 +38,3 @@ Build the Docker image:
 
 ```bash
 docker build -t devops-mini-app:latest .
-exit
-:wq
-q
